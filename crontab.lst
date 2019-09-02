@@ -1,0 +1,8 @@
+## Daily Force Leave every 30 minutes
+*/30 * * * * bash /root/consul-leave-dday.sh
+
+## Daily Force Leave at 1.30pm
+30 1 * * * bash /root/consul-leave-daily.sh
+
+## Weekly Force Leave at 2.30pm Friday
+30 2 * * 5 bash /root/consul-leave-weekly.sh
