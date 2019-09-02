@@ -32,7 +32,7 @@ Schedule force-leave for unproperly removing "failed" node from consul cluster.
   ```
 
 > **Notes:**
-> * You can copy `crontab.lst` to `/etc/cron.d/consul-backup` for default cronjob.
+> * You can copy `crontab.lst` to `/etc/cron.d/consul-leave` for default cronjob.
 >   ```
 >   sudo cp crontab.lst /etc/cron.d/consul-leave
 >   ```
