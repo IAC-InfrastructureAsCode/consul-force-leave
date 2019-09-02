@@ -36,6 +36,7 @@ Schedule force-leave for unproperly removing "failed" node from consul cluster.
 >   ```
 >   sudo cp crontab.lst /etc/cron.d/consul-leave
 >   ```
+> * Logs `force-leave` will save to `/var/log/consul-force-leave`
 > -----
 
 ## Running Manual
