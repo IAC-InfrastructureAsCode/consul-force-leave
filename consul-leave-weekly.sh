@@ -23,9 +23,9 @@ run_force_leaving(){
   echo $MEMBERS
   if [ ! -z "$MEMBERS" ]
   then
-	  echo "Force Leave All Failed Node..."
+    echo "Force Leave All Failed Node..."
     echo "-------------------------------"
-	  consul members -http-addr=$CONSUL_SERVER | grep failed | awk '{ print $1 }' | xargs -L 1 consul force-leave -http-addr=$CONSUL_SERVER
+    consul members -http-addr=$CONSUL_SERVER | grep failed | awk '{ print $1 }' | xargs -L 1 consul force-leave -http-addr=$CONSUL_SERVER
     echo "-------------------------------"
     echo "Force Leave Done!"
     run_create_log
